@@ -93,6 +93,13 @@ nav { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
   background: linear-gradient(135deg, #D4567A, #C85A7A);
   color: #fff;
 }
+.cart-heart-icon {
+  width: 15px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 3px;
+  margin-bottom: 2px;
+}
 
 .cart-badge {
   position: absolute;
