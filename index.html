@@ -26,6 +26,21 @@
     <a class="brand" href="#"><span>Le Tresor De </span><i>Misfah</i></a>
   </div>
   <nav>
+    <div style="position:relative;">
+      <button class="nav-btn search-toggle-btn" id="searchToggleBtn" onclick="toggleSearchBar()" aria-label="Search gifts">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </button>
+      <div class="search-dropdown" id="searchDropdown">
+        <div class="search-bar-wrap">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input class="search-bar" id="searchInput" type="text" placeholder="Search gifts…" oninput="filterProducts()">
+        </div>
+      </div>
+    </div>
     <button class="nav-btn about-btn" onclick="showView('about')">About ✦</button>
     <button class="nav-btn cart-btn" onclick="showView('cart')">
       🛍️ Cart
@@ -41,16 +56,6 @@
   </video>
   <div class="hero-orb hero-orb-1"></div>
   <div class="hero-orb hero-orb-2"></div>
-</div>
-
-<!-- ══ SEARCH TOOLBAR ══ -->
-<div class="tabs-wrap" id="searchBar">
-  <div class="search-bar-wrap">
-    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-    </svg>
-    <input class="search-bar" id="searchInput" type="text" placeholder="Search gifts…" oninput="filterProducts()">
-  </div>
 </div>
 
 <!-- ══ SHOP VIEW ══ -->
