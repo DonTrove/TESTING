@@ -94,7 +94,7 @@ nav { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
   color: #fff;
 }
 .cart-heart-icon {
-  width: 15px;
+  width: 22px;
   height: auto;
   vertical-align: middle;
   margin-right: 3px;
